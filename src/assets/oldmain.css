@@ -1,0 +1,338 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 200px;
+    height: 350px;
+    margin: 1.5rem;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.container img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* .container .year {
+    position: absolute;
+    z-index: 200;
+    left: 05%;
+    top: 0%;
+    border-color: black;
+    color: transparent; 
+    transition: color 0.5s ease-in;
+    font-size: 1.5rem;
+    
+
+} */
+.container .year {
+    position: absolute;
+    z-index: 200;
+    left: 05%;
+    top: 10%; /* Start below the view */
+    border-color: black;
+    color: transparent; 
+    transition: color 0.5s ease-in, top 0.5s ease-in-out; /* Add transition for top */
+    font-size: 1.5rem;
+}
+
+.container:hover .year {
+    color: #FC766AFF;
+    top: 0%; /* Move text to original position */
+}
+.container .type {
+    position: absolute;
+    z-index: 200;
+    left: 100%;
+    bottom: 100%;
+    border-color: black;
+    color: transparent; 
+    transition: color 0.5s ease-in, top 0.5s ease-in-out; /* Add transition for top */
+    font-size: 1.5rem;
+
+}
+
+/* .container:hover .year {
+    color: yellow;}
+    /* Make the year visible on hover */
+
+.container:hover .type {
+     bottom: 15%;
+      left: 5%;
+    color: #FC766AFF; /* Make the year visible on hover */
+}
+.container:hover img{
+filter: blur(2px);
+
+}
+
+.title {
+    position: absolute;
+    top: calc(100% - 70px); /* Adjust the value to match the height of the image */
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 150;
+    transition: top 0.5s ease, color 0.5s ease; /* Smooth transition for position and color */
+}
+
+.container:hover .title {
+    top: calc(100% - 75px); /* Adjust this value if needed for the hover effect */
+    color: #5B84B1FF; /* Optional: Change color on hover */
+}
+
+
+
+
+
+v 2.0
+
+
+
+
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  width: 200px;
+  height: 350px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  font-weight: bold;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: filter 0.3s ease;
+}
+
+.container .year {
+  position: absolute;
+  z-index: 200;
+  left: 5%;
+  top: 10%; /* Start below the view */
+  border-color: black;
+  color: transparent; 
+  transition: color 0.5s ease-in, top 0.5s ease-in-out; /* Add transition for top */
+  font-size: 1.5rem;
+}
+
+.container:hover .year {
+  color: #FC766AFF;
+  top: 0%; /* Move text to original position */
+}
+
+.container .type {
+  position: absolute;
+  z-index: 200;
+  left: 100%;
+  bottom: 100%;
+  border-color: black;
+  color: transparent; 
+  transition: color 0.5s ease-in, bottom 0.5s ease-in-out; /* Add transition for bottom */
+  font-size: 1.5rem;
+}
+
+.container:hover .type {
+  bottom: 15%;
+  left: 5%;
+  color: #FC766AFF; /* Make the type visible on hover */
+}
+
+.container:hover img {
+  filter: blur(2px);
+}
+
+.title {
+  position: absolute;
+  top: calc(100% - 70px); /* Adjust the value to match the height of the image */
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 150;
+  transition: top 0.5s ease, color 0.5s ease; /* Smooth transition for position and color */
+}
+
+.container:hover .title {
+  top: calc(100% - 75px); /* Adjust this value if needed for the hover effect */
+  color: #5B84B1FF; /* Optional: Change color on hover */
+}
+
+
+
+
+v3.0
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 220px;
+  height: 350px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.container:hover img {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.container .info1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 200;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* Initially hide the .info section */
+.container .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 200;
+  opacity: 0; /* Hide the info section */
+  transform: translateY(20px); /* Move the info section down */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  padding-bottom: 50px;
+}
+
+/* Show the .info section on hover */
+.container:hover .info {
+  opacity: 1; /* Make the info section visible */
+  transform: translateY(0); /* Move the info section to its original position */
+}
+
+.container .year,
+.container .type {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #e5e5e5;
+}
+
+.container .title {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+
+
+/* search box */
+button {
+  background-color: #0A0A0A; /* Dark background */
+  color: #FFFFFF; /* Light text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #333333; /* Darker shade on hover */
+}
+input[type="text"] {
+  background-color: #0A0A0A; /* Dark background */
+  color: #FFFFFF; /* Light text */
+  border: 1px solid #333333; /* Subtle border */
+  padding: 10px;
+  margin: 4px 2px;
+  border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+  color: #575757; /* Lighter text for placeholder */
+}
+.textarea{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
