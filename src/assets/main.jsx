@@ -28,8 +28,8 @@ export default function Main() {
         <input
           value={searchdata}
           onChange={(e) => setSearchdata(e.target.value)}
-          placeholder="Search for setmovie"
-          type="text" 
+          placeholder="Search for movie/series"
+          type="text"
         />
         <button onClick={handleClick}>Search</button>
       </div>
@@ -41,7 +41,7 @@ export default function Main() {
         </div>
       ) : (
         <div className="empty">
-          <h2>No setmovie found</h2>
+          <h2>No movie/series found</h2>
         </div>
       )}
     </div>
