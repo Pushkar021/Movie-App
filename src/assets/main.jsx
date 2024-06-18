@@ -35,7 +35,7 @@ export default function Main() {
         />
         <button onClick={handleClick}>Search</button>
       </div>
-      {setmovie.length > 0 ? (
+      {setmovie.length != 0 ? (
         <div className="movie-list">
           {setmovie.map((movie) => (
             <Container key={movie.imdbID} movie={movie} />

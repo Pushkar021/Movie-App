@@ -60,7 +60,7 @@ body {
   z-index: 200;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-/* Initially hide the .info section */
+
 .container .info {
   position: absolute;
   bottom: 0;
@@ -70,16 +70,15 @@ body {
   box-sizing: border-box;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   z-index: 200;
-  opacity: 0; /* Hide the info section */
-  transform: translateY(20px); /* Move the info section down */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   padding-bottom: 110px;
 }
 
-/* Show the .info section on hover */
 .container:hover .info {
-  opacity: 1; /* Make the info section visible */
-  transform: translateY(0); /* Move the info section to its original position */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .container .year,
@@ -87,7 +86,6 @@ body {
   font-size: 0.9rem;
   margin: 0;
   color: #e5e5e5;
-  
   font-weight: bold;
 }
 
@@ -98,13 +96,9 @@ body {
   font-weight: bold;
 }
 
-
-
-
-/* search box */
 button {
-  background-color: #0A0A0A; /* Dark background */
-  color: #FFFFFF; /* Light text */
+  background-color: #0A0A0A;
+  color: #FFFFFF;
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -118,32 +112,33 @@ button {
 }
 
 button:hover {
-  background-color: #333333; /* Darker shade on hover */
+  background-color: #333333;
 }
+
 input[type="text"] {
-  background-color: #0A0A0A; /* Dark background */
-  color:whitesmoke; /* Light text */
-  border: 1px solid #333333; /* Subtle border */
+  background-color: #0A0A0A;
+  color: whitesmoke;
+  border: 1px solid #333333;
   padding: 10px;
   margin: 4px 2px;
   border-radius: 5px;
   width: 50%;
-  
 }
 
 input[type="text"]::placeholder {
-  color: grey; /* Lighter text for placeholder */
+  color: grey;
 }
-.textarea{
+
+.textarea {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.img{
+
+.img {
   width: 200px;
   display: flex;
   justify-content: center;
   text-align: center;
   margin-left: 30px;
-    
 }
