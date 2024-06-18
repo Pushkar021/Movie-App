@@ -108,19 +108,21 @@
  }) {
    return (
      <div className="movie-list">
-       <div key={imdbID} className="container">
-         <img
-           src={Poster !== "N/A" ? Poster : "https://via.placeholder.com/400"}
-           alt={`${Title} Poster`}
-         />
-         <div className="info">
-           <p className="year">{Year}</p>
-           <p className="type">{Type}</p>
+       <a href={"https://www.imdb.com/title/" + imdbID} target ="_blank">
+         <div key={imdbID} className="container">
+           <img
+             src={Poster !== "N/A" ? Poster : "https://via.placeholder.com/400"}
+             alt={`${Title} Poster`}
+           />
+           <div className="info">
+             <p className="year">{Year}</p>
+             <p className="type">{Type}</p>
+           </div>
+           <div className="info1">
+             <p className="title">{Title}</p>
+           </div>
          </div>
-         <div className="info1">
-           <p className="title">{Title}</p>
-         </div>
-       </div>
+       </a>
      </div>
    );
  }
