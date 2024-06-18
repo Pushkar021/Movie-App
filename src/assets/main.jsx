@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Container from "./container.jsx";
 import "./main.css";
+import image from "./9264822.jpg";
+
 
 const api = "https://www.omdbapi.com/?apikey=30b94e0f&s=";
 
@@ -42,6 +44,7 @@ export default function Main() {
       ) : (
         <div className="empty">
           <h2>No movie/series found</h2>
+          <img  className="img" src={image} alt="img" />
         </div>
       )}
     </div>
