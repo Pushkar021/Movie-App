@@ -11,7 +11,7 @@ export default function Main() {
   const [setmovie, setMovies] = useState([]);
 
   useEffect(() => {
-    search("john wick");
+    search("fast");
   }, []);
 
   async function search(title) {
